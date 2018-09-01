@@ -302,3 +302,29 @@ nav h1 a {
   color: #666;
 }
 /* ====================== Media Queries ====================== */
+@media only screen and (max-width: 350px) {
+	nav h1 a {
+	  font-size: 12pt;
+	  letter-spacing: 5px;
+	}
+	#map {
+	  height: 300px;
+	}
+	.filter-options select {
+	  height: 20px;
+	  padding: 0 5px;
+	}
+	#restaurants-list {
+		padding: 10px;
+	}
+	#restaurants-list li {
+	  margin: 10px;
+	  min-height: 350px;
+		padding: 10px;
+	}
+	#restaurants-list li h1 {
+		font-size: 12pt;
+		line-height: 1.2;
+		margin: 10px 0 5px;
+	}
+}
