@@ -6,7 +6,8 @@ td,
 th,
 p {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	/* font-size: 10pt; */
+	font-size: 12pt;
 	color: #333;
 	line-height: 1.5;
 }
@@ -14,12 +15,13 @@ body {
 	background-color: #fdfdfd;
 	margin: 0 auto;
 	position:relative;
-	max-width: 1000px;
+	max-width: 1200px;
 }
 ul,
 li {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	/* font-size: 10pt; */
+	font-size: 12pt;
 	color: #333;
 }
 a {
@@ -174,7 +176,8 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  /* padding: 0 30px 25px; */
+	padding: 20px;
   text-align: left;
   width: 270px;
 }
@@ -325,9 +328,13 @@ nav h1 a {
   color: #666;
 }
 /* ====================== Media Queries ====================== */
-@media only screen and (max-width: 350px) {
+
+/* Basing my media queries off of W3Schools Typical Device Breakpoints: https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
 	nav h1 a {
-	  font-size: 12pt;
+	  font-size: 13pt;
 	  letter-spacing: 5px;
 	}
 	#map {
@@ -363,3 +370,24 @@ nav h1 a {
 		padding-top: 10px;
 	}
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	nav h1 a {
+	  font-size: 16pt;
+	}
+	.filter-options h2 {
+	  font-size: 1.25rem;
+	}
+	.filter-options select {
+	  font-size: 12pt;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {} */
