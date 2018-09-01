@@ -175,7 +175,6 @@ createRestaurantHTML = (restaurant) => {
   address.innerHTML = restaurant.address;
   li.append(address);
 
-<<<<<<< HEAD
   // const more = document.createElement('a');
   // more.innerHTML = 'View Details';
   // more.href = DBHelper.urlForRestaurant(restaurant);
@@ -183,12 +182,6 @@ createRestaurantHTML = (restaurant) => {
 
 //For a11y purposes, anchor tags that look like buttons are now buttons
   const more = document.createElement('button');
-||||||| merged common ancestors
-  const more = document.createElement('a');
-=======
-// Making anchor tags that look like buttons into buttons for a11y
-  const more = document.createElement('button');
->>>>>>> a11y
   more.innerHTML = 'View Details';
   more.onclick = function() {
     const url = DBHelper.urlForRestaurant(restaurant);
