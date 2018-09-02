@@ -1,4 +1,4 @@
-This version of the Restaurant project is by Brianne Williams. References: FEND Nanodegree Lesson 13 Introducing the Service Worker, MDN, W3Schools, WAI-ARIA, Project 1 MWS Webinar with Doug Brown, and Google Web Fundamentals.
+This version of the Restaurant project is by Brianne Williams. References: FEND Nanodegree Lesson 13 Introducing the Service Worker, MDN, W3Schools, WAI-ARIA, Project 1 MWS Webinar with Doug Brown, Google Web Fundamentals, and the Udacity Front-End Web Developer Nanodegree Support Facebook group.
 
 # Mobile Web Specialist Certification Course
 ---
