@@ -30,7 +30,6 @@ self.addEventListener('install', function(event) {
   );
 });
 
-//self.addEventListener('fetch', function(event))
 self.addEventListener('fetch', function(event) {
   var cacheUrlObject = new URL(event.request.url);
   if (cacheUrlObject.origin === location.origin) {
@@ -39,16 +38,10 @@ self.addEventListener('fetch', function(event) {
       return;
     }
   }
-//event.respondWith
+
   event.respondWith(
     caches.match(event.request).then(function(response) {
       return response || fetch(event.request);
     })
   );
-});
-
-self.addEventListener('message', function(event) {
-  if (event.data.action === 'skipWaiting') {
-    self.skipWaiting();
-  }
 });
